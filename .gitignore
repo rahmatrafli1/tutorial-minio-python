@@ -1,0 +1,4 @@
+.vscode/
+minio/
+venv/
+.env
