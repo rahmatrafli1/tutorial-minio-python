@@ -15,14 +15,14 @@ def add_file():
     )
 
     # Nama file tujuan
-    nama_folder = "/home/diginsight/Documents/Minio/Copy Object/txt"
+    nama_folder = "/home/diginsight/Documents/Minio/Tutorial Minio/txt"
 
-    tujuan_file = f"/{nama_folder}/file_tujuan.txt"
+    tujuan_file = f"/{nama_folder}/hello.txt"
 
     # bucket sumber
     sumber_bucket = "bucket-sumber"
 
-    nama_tujuan_file_bucket = "/txt/file_tujuan.txt"
+    nama_tujuan_file_bucket = "/txt/hello.txt"
 
     # Upload file ke MinIO client
     minio_client.fput_object(

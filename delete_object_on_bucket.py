@@ -1,6 +1,5 @@
 import os
 from minio import Minio
-from minio.commonconfig import CopySource
 from dotenv import load_dotenv
 
 load_dotenv()

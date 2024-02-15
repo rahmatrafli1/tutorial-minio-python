@@ -15,18 +15,17 @@ minio_client = Minio(
 )
 
 # Nama file sumber dan tujuan
-nama_folder = "/home/diginsight/Documents/Minio/Copy Object/python"
+nama_folder = "/home/diginsight/Documents/Minio/Tutorial Minio/txt"
 
-# sumber_file = f"/{nama_folder}/file_sumber.txt"
-tujuan_file = f"/{nama_folder}/hello.py"
+tujuan_file = f"/{nama_folder}/hello.txt"
 
 # bucket sumber dan tujuan
 sumber_bucket = "bucket-sumber"
 tujuan_bucket = "bucket-tujuan"
 
-nama_sumber_file_bucket = "/python/hello.py"
-nama_tujuan_file_bucket = "/python/hello.py"
-copy_nama_tujuan_file = "/python/hello.py"
+nama_sumber_file_bucket = "/txt/hello.txt"
+nama_tujuan_file_bucket = "/txt/hello.txt"
+copy_nama_tujuan_file = "/txt/hello.txt"
 
 def copy_file_object(minio_client, sumber_bucket, nama_sumber_file_bucket, tujuan_bucket, nama_tujuan_file_bucket):
     # Cek Bucket sumber dan Bucket tujuan apakah sudah dibuat apa belum?
